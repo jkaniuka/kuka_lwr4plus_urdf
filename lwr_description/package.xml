@@ -4,8 +4,8 @@
   <name>lwr_description</name>
   <version>0.0.0</version>
   <description>The lwr_description package contains the model of a KUKA LWR 4+ arm.</description>
-  <maintainer email="kan.jan@wp.pl">jan</maintainer>
-  <license>TODO: License declaration</license>
+  <maintainer email="jasiek491@gmail.com">Jan Kaniuka</maintainer>
+  <license>BSD</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

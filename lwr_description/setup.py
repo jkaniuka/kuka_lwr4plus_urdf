@@ -19,10 +19,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='jan',
-    maintainer_email='kan.jan@wp.pl',
+    maintainer='Jan Kaniuka',
+    maintainer_email='jasiek491@gmail.com',
     description='The lwr_description package contains the model of a KUKA LWR 4+ arm.',
-    license='TODO: License declaration',
+    license='BSD',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

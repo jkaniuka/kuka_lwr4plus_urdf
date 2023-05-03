@@ -16,7 +16,9 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         parameters=[{
-            'robot_description': ParameterValue(Command(['xacro ', os.path.join(get_package_share_directory('lwr_description'), 'model', 'kuka_lwr.urdf.xacro') ]), value_type=str),
+            'robot_description': ParameterValue(
+                                    Command(['xacro ', os.path.join(get_package_share_directory('lwr_description'), 'model', 'kuka_lwr.urdf.xacro') ]),
+                                      value_type=str)
         }]
         )
 
@@ -28,7 +30,6 @@ def generate_launch_description():
         arguments=['-d', os.path.join(get_package_share_directory('lwr_description'), 'rviz', 'lwr_config.rviz')]
         )
 
-
     joint_state_publisher_gui = Node(
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui',
@@ -36,12 +37,14 @@ def generate_launch_description():
         condition = IfCondition(LaunchConfiguration('use_gui'))
         )
     
+    # If we don't use joint_state_publisher_gui, we need to publish sensor_msgs/msg/JointState message at least once so that the manipulator model shows up in RViz. 
     joint_states_cmd = ExecuteProcess(
         cmd=[[
             'ros2 topic pub ',
             '/joint_states ',
             'sensor_msgs/msg/JointState ',
-            '"{header: auto, name: ["Joint_1", "Joint_2", "Joint_3", "Joint_4", "Joint_5", "Joint_6", "Joint_7"], position: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}" ',
+            '"{header: auto, name: ["Joint_1", "Joint_2", "Joint_3", "Joint_4", "Joint_5", "Joint_6", "Joint_7"],'
+            ' position: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}" ',
             '--once'
             ]],
         shell=True,

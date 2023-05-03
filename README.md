@@ -8,3 +8,8 @@ source /opt/ros/humble/setup.bash
 colcon build
 . install/setup.bash
 ```
+
+```
+ros2 launch lwr_description display.launch.py 
+ros2 launch lwr_description display.launch.py use_gui:=false
+```
