@@ -15,7 +15,7 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
         (os.path.join('share', package_name, 'model'), glob('model/*.*')),
         (os.path.join('share', package_name, 'rviz') , glob('rviz/*.*')),
-        (os.path.join('share', package_name, 'meshes/lwr4plus/visual') , glob('meshes/lwr4plus/visual/*.*')),
+        (os.path.join('share', package_name, 'meshes') , glob('meshes/*.*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

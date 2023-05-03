@@ -14,7 +14,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 ${M_PI}"/>
 			<geometry>
-				<mesh filename="package://lwr_description/meshes/lwr4plus/visual/base.dae"/>
+				<mesh filename="package://lwr_description/meshes/base.dae"/>
 			</geometry>
 		</visual>
 		<collision>
@@ -39,7 +39,7 @@
 		<visual>
 			<origin xyz="0 0 -0.008" rpy="0 0 ${M_PI}"/>
 			<geometry>
-				<mesh filename="package://lwr_description/meshes/lwr4plus/visual/link_1.dae"/>
+				<mesh filename="package://lwr_description/meshes/link_1.dae"/>
 			</geometry>
 		</visual>
 		<collision>
@@ -76,7 +76,7 @@
 		<visual>
 			<origin xyz="0 0 0.0" rpy="0 0 ${M_PI}"/>
 			<geometry>
-				<mesh filename="package://lwr_description/meshes/lwr4plus/visual/link_2.dae"/>
+				<mesh filename="package://lwr_description/meshes/link_2.dae"/>
 			</geometry>
 		</visual>
 		<collision>
@@ -113,7 +113,7 @@
 		<visual>
 			<origin xyz="0 0 -0.008" rpy="0 0 ${M_PI}"/>
 			<geometry>
-				<mesh filename="package://lwr_description/meshes/lwr4plus/visual/link_3.dae"/>
+				<mesh filename="package://lwr_description/meshes/link_3.dae"/>
 			</geometry>
 		</visual>
 		<collision>
@@ -150,7 +150,7 @@
 		<visual>
 			<origin xyz="0 0 0.0" rpy="0 0 ${M_PI}"/>
 			<geometry>
-				<mesh filename="package://lwr_description/meshes/lwr4plus/visual/link_4.dae"/>
+				<mesh filename="package://lwr_description/meshes/link_4.dae"/>
 			</geometry>
 		</visual>
 		<collision>
@@ -187,7 +187,7 @@
 		<visual>
 			<origin xyz="0 0 -0.008" rpy="0 0 ${M_PI}"/>
 			<geometry name="${name}_5_geom">
-				<mesh filename="package://lwr_description/meshes/lwr4plus/visual/link_5.dae"/>
+				<mesh filename="package://lwr_description/meshes/link_5.dae"/>
 			</geometry>
 		</visual>
 
@@ -225,7 +225,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 ${M_PI}"/>
 			<geometry>
-				<mesh filename="package://lwr_description/meshes/lwr4plus/visual/link_6.dae"/>
+				<mesh filename="package://lwr_description/meshes/link_6.dae"/>
 			</geometry>
 		</visual>
 		<collision>
@@ -250,7 +250,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 ${M_PI}"/>
 			<geometry>
-				<mesh filename="package://lwr_description/meshes/lwr4plus/visual/link_7.dae"/>
+				<mesh filename="package://lwr_description/meshes/link_7.dae"/>
 			</geometry>
 		</visual>
 
